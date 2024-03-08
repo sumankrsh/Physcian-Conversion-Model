@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/ML_turks/MLOPs/Physician_conversion_mlops/data_science/notebooks/mlruns/0/cda50d8cca444fd392ff90ef417c6fa2/artifacts
+end_time: 1696667700203
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cda50d8cca444fd392ff90ef417c6fa2
+run_name: worried-fowl-74
+run_uuid: cda50d8cca444fd392ff90ef417c6fa2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1696667695686
+status: 3
+tags: []
+user_id: HP

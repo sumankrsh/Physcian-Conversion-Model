@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/205422316422868101
+creation_time: 1696755782402
+experiment_id: '205422316422868101'
+last_update_time: 1696755782402
+lifecycle_stage: active
+name: physician_conversion_mlops

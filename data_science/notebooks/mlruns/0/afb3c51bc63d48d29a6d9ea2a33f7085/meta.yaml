@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/ML_turks/MLOPs/Physician_conversion_mlops/data_science/notebooks/mlruns/0/afb3c51bc63d48d29a6d9ea2a33f7085/artifacts
+end_time: 1696668045040
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: afb3c51bc63d48d29a6d9ea2a33f7085
+run_name: learned-bird-177
+run_uuid: afb3c51bc63d48d29a6d9ea2a33f7085
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1696668042090
+status: 3
+tags: []
+user_id: HP

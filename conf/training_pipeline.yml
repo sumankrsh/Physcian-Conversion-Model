@@ -1,0 +1,33 @@
+s3: 
+  bucket_name: "pharma-physician-conversion"
+  file_path: "preprocessed/preprocessed_df.csv"
+  aws_region : 'ap-south-1'  # Replace with your desired AWS region
+  model_variable_list_file_path: "preprocessed/top_n_list_selectKbest.pkl"
+  df_validation_set : "processed_dataframes/df_validation.csv"
+  df_training_set : "preprocessed/train_df.csv"
+
+
+train_model_parameters:
+  inference_size : 0.1 #As it is a demo project we are creating Inference set here for infernece pipeline
+  val_size : 0.2
+  model_params : {'colsample_bytree': 0.8515541529033561,
+                   'gamma': 0.00041513557403451064, 'max_depth': 5, 
+                   'reg_alpha': 0.8419276342842927, 'subsample': 0.7785196865366498}
+
+
+feature_transformation:
+    id_target_col_list : ['npi_id', 'hcp_id', 'target']
+    id_col_list : ['npi_id', 'hcp_id']
+    target_col : ['target']
+  
+feature_store:
+    table_name: "physician_conversion_mlops_feature_store"
+    lookup_key: ['npi_id', 'hcp_id']
+    label : ['target']
+    description : "Physician conversion features- claims, procedure, demographic, etc."
+    lookup_col_to_keep : ['npi_id', 'hcp_id','target']
+    model_directory : 'physician_conversion_classifier'
+
+mlflow:
+    experiment_name:  "physician_conversion_mlops"
+    mlflow_run_name : "physician_conversion_experiments"
